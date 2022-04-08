@@ -1,8 +1,9 @@
 import React from "react";
 
-function form() {
+const FormBook = () => {
     return (
         <div>
+            <h2>Add New Book</h2>
             <form>
                 <input type="text" placeholder="enter book name"/>
                 <input type="text" placeholder="enter book author"/>
@@ -13,4 +14,4 @@ function form() {
     );
 }
 
-export default form;
+export default FormBook;

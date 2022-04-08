@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import './App.css';
-import NavBar from './components/NavBar';
+import './style/App.css';
+import Navbar from './components/Navbar'
 import Books from './components/Books';
 import Categories from './components/Categories';
 
@@ -20,7 +20,7 @@ const books = [
 export default function App() {
   return (
     <div>
-      <NavBar />
+      <Navbar />
       <Routes>
         <Route exact path="/" element={<Books books={books} />} />
         <Route exact path="/categories" element={<Categories />} />

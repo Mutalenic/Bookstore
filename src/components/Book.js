@@ -1,55 +1,35 @@
-import React from "react";
-import PropTypes from 'prop-types';
+import React from 'react';
+import Proptypes from 'prop-types';
 
-
-const BookList = () => (
-    <div>
-
-const Book = ({ book }) => (
-  <div className="books-container">
-    <div>
-      <div className="book-category">{book.category}</div>
-      <div className="book-title">{book.title}</div>
-      <div className="book-author">{book.author}</div>
-    </div>
-
-    <div>
-      <div className="book-complChart" />
-      <div className="book-completed">
-        {book.completed}
-        %
+export default function Book({ book }) {
+  return (
+    <div className="bookCard">
+      <div className="bookInfo">
+        <p className="genre">{book.genre}</p>
+        <p className="title">{book.title}</p>
+        <p className="author">{book.author}</p>
+        <ul>
+          <li><button type="button">Comments</button></li>
+          <li><button type="button">Remove</button></li>
+          <li><button type="button">Edit</button></li>
+        </ul>
       </div>
-      <div className="book-complPref">completed</div>
-    </div>
-    <div>
-      <div className="book-curChap">Current Chapter</div>
-      <div className="book-curChap">
-        Chapter
-        {book.currentChapter}
-        <span className="book-curChap-title">{book.currentChapterTitle}</span>
+      <div className="progress">
+        <div>
+          <div>chart</div>
+          <p>percentage</p>
+        </div>
+        <div>
+          <p>{book.status}</p>
+          <p>{book.currentChapter}</p>
+          <p>{book.chapterNumber}</p>
+          <button type="button">Update progress</button>
+        </div>
       </div>
     </div>
-    <button type="button">Remove</button>
-  </div>
-);
+  );
+}
 
 Book.propTypes = {
-  book: PropTypes.instanceOf(Object),
+  book: Proptypes.objectOf(Proptypes.string).isRequired,
 };
-
-Book.defaultProps = {
-  book: {},
-};
-
-
-            <li>
-            <span>Book 1 </span>
-        <span>Author 1 </span>
-        <span>50% </span>
-        <button type="button">Remove</button>
-            </li>
-        </ul>
-    </div>
-)
-
-export default Book;
