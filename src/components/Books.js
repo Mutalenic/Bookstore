@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 import Proptypes from 'prop-types';
-import Book from "./Book";
-import FormBook from "./Form";
+import Book from './Book';
+import FormBook from './Form';
 
 export default function Books({ books }) {
   return (
@@ -17,5 +17,3 @@ export default function Books({ books }) {
 Books.propTypes = {
   books: Proptypes.arrayOf(Proptypes.shape({})).isRequired,
 };
-
-  
