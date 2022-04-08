@@ -1,15 +1,11 @@
-## Math Magicians: Tests
-In this project, we wrote unit tests for the Math Magicians app, using the Jest and React Testing Library libraries.
+## Bookstore: initialize project with components
+In this project I have laid the foundations for my Bookstore website. I have created the React part of the app. I have also set up routing using React Router.
 
 ## Built With
 This project is built with: 
 - React
 - CSS
 - JavaScript
-## Live Demo
-- [Heroku](https://mathmagicians21.herokuapp.com/)
-or
-- [Netlify](https://splendorous-profiterole-89276c.netlify.app/)
 
 ## Getting Started
 To get the content of this project locally you need to run this command in your terminal:
