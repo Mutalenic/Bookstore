@@ -1,9 +1,11 @@
 import React from 'react';
-import Proptypes from 'prop-types';
+import { useSelector } from 'react-redux';
 import Book from './Book';
 import FormBook from './Form';
 
-export default function Books({ books }) {
+export default function Books() {
+  const books = useSelector((state) => state.bookReducer);
+
   return (
     <>
       {books.map((book) => (
@@ -13,7 +15,3 @@ export default function Books({ books }) {
     </>
   );
 }
-
-Books.propTypes = {
-  books: Proptypes.arrayOf(Proptypes.shape({})).isRequired,
-};
