@@ -17,9 +17,7 @@ Use npm start to run the app in your browser
 
 Test
 For tracking linter errors locally you need to follow these steps:
-
 After cloning the project make sure you have run this command
-
 npm install command
 
 For tracking the linterj errors in CSS file run:
