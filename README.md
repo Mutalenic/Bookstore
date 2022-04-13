@@ -14,6 +14,7 @@ git clone https://github.com/Mutalenic/Bookstore/.git
 cd math-magicians
 npm install To download all the dependancies of the project
 Use npm start to run the app in your browser
+
 Test
 For tracking linter errors locally you need to follow these steps:
 
