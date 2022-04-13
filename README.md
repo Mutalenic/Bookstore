@@ -1,5 +1,5 @@
-## Bookstore: initialize project with components
-In this project I have laid the foundations for my Bookstore website. I have created the React part of the app. I have also set up routing using React Router.
+## Bookstore: Reducers and Actions
+In this project I have configured my Redux Store and wrote actions and reducer for adding and removing books. 
 
 ## Built With
 This project is built with: 
