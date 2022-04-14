@@ -1,25 +1,8 @@
+const API = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/x8MAYa4ItudHVPXEjq4d';
 const ADD_BOOK = 'ADD_BOOK';
 const REMOVE_BOOK = 'REMOVE_BOOK';
 
-const initialState = [{
-  id: 1,
-  genre: 'genre',
-  title: 'book title',
-  author: 'author',
-  status: 'complete',
-  currentChapter: 'Current chapter',
-  chapterNumber: 'Chapter #number',
-},
-{
-  id: 2,
-  genre: 'genre',
-  title: 'book title',
-  author: 'author',
-  status: 'complete',
-  currentChapter: 'Current chapter',
-  chapterNumber: 'Chapter #number',
-},
-];
+const initialState = [];
 
 export const addBook = (payload) => ({
   type: ADD_BOOK,
