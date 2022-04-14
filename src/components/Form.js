@@ -32,8 +32,8 @@ const FormBook = () => {
     <div>
       <form onSubmit={formHandler}>
         <h2>ADD NEW BOOK</h2>
-        <input type="text" placeholder="Book Title .." onChange={(e) => setTitle(e.target.value)} required />
-        <input className="book-input" placeholder="Author" onChange={(e) => setAuthor(e.target.value)} required />
+        <input type="text" placeholder="Book Title .." value={author} onChange={(e) => setTitle(e.target.value)} required />
+        <input className="book-input" placeholder="Author" value={author} onChange={(e) => setAuthor(e.target.value)} required />
         <select id="books" value={category} name={category} onChange={(e) => setCategory(e.target.value)} required>
           <option value="" disabled>Category</option>
           <option value="Fiction">Fiction</option>
