@@ -1,7 +1,7 @@
 import React from 'react';
 import Proptypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import { removeBook } from '../redux/books/Books';
 
 export default function Book({ book }) {
   const dispatch = useDispatch();
