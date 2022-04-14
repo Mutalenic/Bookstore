@@ -1,9 +1,9 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './style/App.css';
-import Navbar from './components/Navbar.js';
-import Books from './components/Books.js';
-import Categories from './components/Categories.js';
+import Navbar from './components/Navbar';
+import Books from './components/Books';
+import Categories from './components/Categories';
 
 const books = [
   {
