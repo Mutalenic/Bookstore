@@ -3,7 +3,7 @@ import {
 } from 'redux';
 import logger from 'redux-logger';
 
-import bookReducer from './books/books';
+import bookReducer from './books/Books';
 import categoriesReducer from './categories/categories';
 
 const reducer = combineReducers({
