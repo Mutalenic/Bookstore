@@ -54,12 +54,12 @@ const reducer = (state = initialState, action) => {
       const bookList = [];
       Object.keys(action.payload).forEach((key) => {
         const book = action.payload[key][0];
-        let progress = 0;
+        // let progress = 0;
         book.item_id = key;
-        if (!book.completed) {
-          progress += Math.floor(Math.random() * 100);
-          book.completed = progress;
-        }
+        // if (!book.completed) {
+        //   progress += Math.floor(Math.random() * 100);
+        //   book.completed = progress;
+        // }
         bookList.push(book);
       });
       return bookList;

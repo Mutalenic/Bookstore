@@ -1,14 +1,13 @@
 import React from 'react';
 import Proptypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { del, getBooks } from '../redux/books/Books';
+import { del } from '../redux/books/Books';
 
 const Book = ({ book }) => {
   const dispatch = useDispatch();
-
-  const deleteBook = () => {
-    dispatch(del(book.id));
-    dispatch(getBooks());
+  const deleteBook = (e, bookId) => {
+    e.preventDefault();
+    dispatch(del(bookId));
   };
 
   return (
@@ -19,7 +18,7 @@ const Book = ({ book }) => {
         <p className="author">{book.author}</p>
         <ul>
           <li><button type="button">Comments</button></li>
-          <li><button type="button" onClick={deleteBook}>Remove</button></li>
+          <li><button type="button" onClick={(e) => deleteBook(e, book.item_id)}>Remove</button></li>
           <li><button type="button">Edit</button></li>
         </ul>
       </div>
