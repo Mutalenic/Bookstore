@@ -1,5 +1,8 @@
-## Bookstore: Use Redux in React components
-In this project Ihave used Redux store to display books. I have also added some UI elements to my components and made them dispatch actions.
+## Bookstore: Connect to API
+In this project, I have connected my React-Redux application to an existing API to create and remove books in a remote server by doing the following:
+- Used store, actions and reducers in React.
+- Connect React and Redux.
+- Connect an existing API via Redux and use the data to display the books.
 
 ## Built With
 This project is built with: 

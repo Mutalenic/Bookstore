@@ -1,13 +1,13 @@
 import React from 'react';
 import Proptypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/Books';
+import { del } from '../redux/books/Books';
 
-export default function Book({ book }) {
+const Book = ({ book }) => {
   const dispatch = useDispatch();
-
-  const deleteBook = () => {
-    dispatch(removeBook(book.id));
+  const deleteBook = (e, bookId) => {
+    e.preventDefault();
+    dispatch(del(bookId));
   };
 
   return (
@@ -18,7 +18,7 @@ export default function Book({ book }) {
         <p className="author">{book.author}</p>
         <ul>
           <li><button type="button">Comments</button></li>
-          <li><button type="button" onClick={deleteBook}>Remove</button></li>
+          <li><button type="button" onClick={(e) => deleteBook(e, book.item_id)}>Remove</button></li>
           <li><button type="button">Edit</button></li>
         </ul>
       </div>
@@ -36,8 +36,10 @@ export default function Book({ book }) {
       </div>
     </div>
   );
-}
+};
 
 Book.propTypes = {
   book: Proptypes.objectOf(Proptypes.string).isRequired,
 };
+
+export default Book;
