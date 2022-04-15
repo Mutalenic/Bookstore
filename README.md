@@ -1,8 +1,10 @@
-## Bookstore: Connect to API
+## Bookstore: Styling
 In this project, I have connected my React-Redux application to an existing API to create and remove books in a remote server by doing the following:
 - Used store, actions and reducers in React.
 - Connect React and Redux.
-- Connect an existing API via Redux and use the data to display the books.
+- Connected an existing API via Redux and used the data to display the books.
+- Applied React best practices and language style guides in code.
+![bookstore](https://user-images.githubusercontent.com/19844175/163622701-fd4e8847-002b-4538-ab83-62484f86756c.png)
 
 ## Built With
 This project is built with: 
