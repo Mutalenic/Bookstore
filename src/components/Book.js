@@ -17,21 +17,32 @@ const Book = ({ book }) => {
         <p className="title">{book.title}</p>
         <p className="author">{book.author}</p>
         <ul>
-          <li><button type="button">Comments</button></li>
-          <li><button type="button" onClick={(e) => deleteBook(e, book.item_id)}>Remove</button></li>
-          <li><button type="button">Edit</button></li>
+          <li><button type="button" className="userinterationBtn">Comments</button></li>
+          <li><button type="button" className="userinterationBtn" onClick={(e) => deleteBook(e, book.item_id)}>Remove</button></li>
+          <li><button type="button" className="userinterationBtn">Edit</button></li>
         </ul>
       </div>
       <div className="progress">
-        <div>
-          <div>chart</div>
-          <p>percentage</p>
+        <div className="chart">
+          <div className="ProgressBar">
+            <div className="circle-wrap">
+              <div className="circle">
+                <div className="mask half">
+                  <div className="fill" />
+                </div>
+                <div className="inside-circle" />
+              </div>
+            </div>
+          </div>
+          <div className="percentages">
+            <h2 className="percentComplete">48%</h2>
+            <p className="status">Completed</p>
+          </div>
         </div>
-        <div>
-          <p>{book.status}</p>
-          <p>{book.currentChapter}</p>
-          <p>{book.chapterNumber}</p>
-          <button type="button">Update progress</button>
+        <div className="rightSection">
+          <p className="status">currentChapter</p>
+          <p>chapterNumber</p>
+          <button className="bookButton" type="button">Update progress</button>
         </div>
       </div>
     </div>

@@ -41,8 +41,8 @@ const FormBook = () => {
           <option value="Adventure">Adventure</option>
           <option value="Romance">Romance</option>
         </select>
+        <button type="button" onClick={(e) => UpdateStore(e)}>ADD BOOK</button>
       </form>
-      <button type="button" onClick={(e) => UpdateStore(e)}>ADD BOOK</button>
     </div>
   );
 };
